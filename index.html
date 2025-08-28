@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoodMeals Pro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <h1>🍽️ MoodMeals Pro</h1>
+      <div class="controls">
+        <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <p class="tag">Tell me your mood — I’ll fetch recipes for you.</p>
+      <div class="moods" id="moods"></div>
+      <div class="actions">
+        <input id="search" placeholder="Search recipes (e.g. chicken, pasta)..." />
+        <button id="randomBtn">Surprise me 🍀</button>
+      </div>
+    </section>
+
+    <section class="result">
+      <h2 id="resultTitle">Pick a mood or search</h2>
+      <div id="cardArea" class="card-area"></div>
+    </section>
+
+    <section class="favorites">
+      <h3>❤️ Favorites</h3>
+      <div id="favoritesList" class="card-area"></div>
+    </section>
+
+    <footer class="footer">
+      <small>Made with ❤️ — Advanced Demo (GitHub + Vercel ready)</small>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
